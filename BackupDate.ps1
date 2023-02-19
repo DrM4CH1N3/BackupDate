@@ -104,7 +104,7 @@ while ($x -lt $Folder_to_Back.Count)
 		$Path_To_Server = "\\Your\Shared\Folder\On\Server\" ## /!\ CHANGE ME /!\
 		$Folder_To_Server = ""
 		#Path to Backup
-		$Path_To_Backup = "B:\BACKUPS\Backup_$year\$month\$dd\OVH-WEB\WEB\" 
+		$Path_To_Backup = "B:\BACKUPS\Backup_$year\$month\$dd\" 
 		
         $Folder_To_Backup = $Folder_to_Back[$x]
 		Write-Host "------------------------------------------------------"
