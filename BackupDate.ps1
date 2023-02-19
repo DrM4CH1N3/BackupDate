@@ -124,7 +124,7 @@ while ($x -lt $Folder_to_Back.Count)
 		Write-Host "STEP 2 : Retrieving the date of last modification"
 		$oldfilelist4 = $getfile4a | Where-Object LastWriteTime -lt $DatedeDerniereModif
 
-		#Retrieving the size of the 2 folders to compare them (if the size is equal, no action).
+		#New Backup.
 		Write-Host "STEP 3 : Creation of the backup folders"
 		New-Item -Force -Path "$BackPath\Backup_$year\$month\$dd\$Folder_To_Backup" -ItemType Directory
 
